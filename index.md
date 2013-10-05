@@ -16,7 +16,7 @@ Cloud Commander [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][Depend
 [BlogURL]:                  http://blog.cloudcmd.io "Блог"
 [DemoURL]:                  http://io.cloudcmd.io "Демо"
 
-**Cloud Commander** - файловый менеджер с консолью и редактором.
+**Cloud Commander** - облачный файловый менеджер с консолью и редактором.
 
 ![Cloud Commander](https://raw.github.com/coderaiser/cloudcmd/master//img/logo/cloudcmd.png "Cloud Commander")
 
