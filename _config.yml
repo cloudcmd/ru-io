@@ -1,4 +1,5 @@
-markdown    : redcarpet
-tagLine     : Облачный файловый менеджер с консолью и редактором.
-viewOn      : Посмотреть на
-download    : Скачать
+markdown      : redcarpet
+tagLine       : Облачный файловый менеджер с консолью и редактором.
+viewOn        : Посмотреть на
+download      : Скачать
+maintainedBy  : Проект поддерживает
