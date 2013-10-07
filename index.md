@@ -292,4 +292,4 @@ MIT [license](LICENSE "лицензия").
 Особая благодарность:
 ---------------
 - [Polietilena](http://polietilena.github.io/ "Polietilena") за [logo](img/logo/cloudcmd.png "logo") и [favicon](img/favicon/favicon.png "favicon").
-- [Elec-ua](https://github.com/elec-ua) за [ru](http://ru.cloudcmd.io "Cloud Commander in Russian") и [ua](http://ua.cloudcmd.io "Cloud Commander in Ukrainian") translations.
+- [Elec-ua](https://github.com/elec-ua) за [Русский](http://ru.cloudcmd.io "Русский") и [Украинский](http://ua.cloudcmd.io "Украинский") переводы.
