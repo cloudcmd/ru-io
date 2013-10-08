@@ -18,7 +18,7 @@ Cloud Commander v0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status]
 
 **Cloud Commander** - облачный файловый менеджер с консолью и редактором.
 
-![Cloud Commander](https://raw.github.com/coderaiser/cloudcmd/master//img/logo/cloudcmd.png "Cloud Commander")
+![Cloud Commander](http://cdn.cloudcmd.io/img/logo/cloudcmd.png "Cloud Commander")
 
 [![Flattr][FlattrIMGURL]][FlattrURL]
 
