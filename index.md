@@ -26,10 +26,10 @@ Cloud Commander v0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status]
 ---------------
 - полная совместимость с браузерами *(ie6+,chrome,safari,opera,firefox)*;
 - responsible design
-- one full page loading, *and then just one-time json-dir-listings loading
+- единоразовая полная загрузка страницы, *and then just one-time json-dir-listings loading
 (with refresh opportunity).*
 - кеширование прочитанных страниц *в localStorage (на сейчас)
-(поэтому при проблемах с сетью или прерывании сигнала, ми
+(поэтому при проблемах с сетью или прерывании сигнала, мы
 совершенно точно сможем продолжить работу с кешированной копией папок)*;
 - привязка клавиш
 - отключена поддержка js *(работает только в режиме ограниченности)*.
