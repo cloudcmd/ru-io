@@ -12,7 +12,7 @@ Cloud Commander v0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status]
 [BuildStatusURL]:           http://travis-ci.org/coderaiser/cloudcmd  "Build Status"
 [DependencyStatusURL]:      https://gemnasium.com/coderaiser/cloudcmd "Dependency Status"
 [FlattrURL]:                https://flattr.com/submit/auto?user_id=coderaiser&url=github.com/coderaiser/cloudcmd&title=cloudcmd&language=&tags=github&category=software
-[MainURL]:                  http://cloudcmd.io "Главная"
+[MainURL]:                  http://ru.cloudcmd.io "Главная"
 [BlogURL]:                  http://blog.cloudcmd.io "Блог"
 [DemoURL]:                  http://io.cloudcmd.io "Демо"
 
