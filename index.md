@@ -236,6 +236,7 @@ isn't exist.
 ---------------
 **Cloud Commander** desinged to easily porting extensions.
 Для расширения основного функционала Cloud Commander использует следующие модули:
+
 - [Ace]                     [AceURL]
 - [FancyBox]                [FancyBoxURL]
 - [jQuery-contextMenu]      [jQuery-contextMenuURL]
