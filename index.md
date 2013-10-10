@@ -12,7 +12,7 @@ Cloud Commander v0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status]
 [BuildStatusURL]:           http://travis-ci.org/coderaiser/cloudcmd  "Build Status"
 [DependencyStatusURL]:      https://gemnasium.com/coderaiser/cloudcmd "Dependency Status"
 [FlattrURL]:                https://flattr.com/submit/auto?user_id=coderaiser&url=github.com/coderaiser/cloudcmd&title=cloudcmd&language=&tags=github&category=software
-[MainURL]:                  http://ru.cloudcmd.io "Главная"
+[MainURL]:                  http://cloudcmd.io "Главная"
 [BlogURL]:                  http://blog.cloudcmd.io "Блог"
 [DemoURL]:                  http://io.cloudcmd.io "Демо"
 
@@ -25,14 +25,13 @@ Cloud Commander v0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status]
 Преимущества
 ---------------
 - полная совместимость с браузерами *(ie6+,chrome,safari,opera,firefox)*;
-- responsible design
-- единоразовая полная загрузка страницы, *and then just one-time json-dir-listings loading
-(with refresh opportunity).*
+- отзывчивый дизайн
+- единоразовая полная загрузка страницы, с возможностью обновления.
 - кеширование прочитанных страниц *в localStorage (на сейчас)
 (поэтому при проблемах с сетью или прерывании сигнала, мы
 совершенно точно сможем продолжить работу с кешированной копией папок)*;
 - привязка клавиш
-- отключена поддержка js *(работает только в режиме ограниченности)*.
+- возможность работы с отключенным js *(работает только в режиме ограниченности)*.
 
 
 **Cloud Commander** использует все преимущества js, поэтому при отключенном js,
