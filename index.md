@@ -100,6 +100,7 @@ Cloud Commander 0.5.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 ---------------
 Установить **Cloud Commander** очень просто (проще простого).
 Всё что вам нужно сделать: 
+
 - установить [node.js](//nodejs.org/ "node.js")
 - [скачать](https://github.com/coderaiser/cloudcmd/archive/master.zip)
 и распокавать или просто клонировать репозиторий с github:
