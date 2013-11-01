@@ -1,4 +1,5 @@
 markdown        : redcarpet
+name            : Cloud Commander
 title           : "Cloud Commander - облачный файловий менеджер"
 tagLine         : Облачный файловый менеджер с консолью и редактором
 viewOn          : Посмотреть на
