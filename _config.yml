@@ -9,3 +9,4 @@ ga              : UA-45093573-3
 canonical       : ru.cloudcmd.io
 repoName        : cloudcmd/io-ru/edit/gh-pages/index.md
 improveText     : "Нашли ошибку? Помогите её исправить."
+repoSource      : coderaiser/cloudcmd
