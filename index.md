@@ -128,9 +128,13 @@ Cloud Commander 0.7.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 - **~**                 - открыть
 - **Esc**               - закрыть
 
-Гарячие клавиши просмотра
+Настройки
 ---------------
-- **F3**                - открыть
+[Демо](http://io.cloudcmd.io#/config "Настройки")
+![Настройки](http://cloudcmd.io/img/screen/config.png "Настройки")
+
+###Гарячие клавиши
+- **F10**               - открыть
 - **Esc**               - закрыть
 
 Меню
