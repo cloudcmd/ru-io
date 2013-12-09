@@ -40,6 +40,28 @@ Cloud Commander 0.7.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 - Имеет консоль и редактор.
 - Написан на JavaScript/Node.js.
 
+Установка
+---------------
+[![NPM_INFO][NPM_INFO_IMG]][NPM_INFO_URL]
+
+Установить **Cloud Commander** очень просто (проще простого).
+Всё что вам нужно сделать: 
+
+- установить [node.js](//nodejs.org/ "node.js")
+- [скачать](https://github.com/coderaiser/cloudcmd/archive/master.zip)
+и распокавать или просто клонировать репозиторий с github:
+
+```
+    git clone git://github.com/coderaiser/cloudcmd.git
+    cd cloudcmd
+    node cloudcmd
+```
+или установить в npm:
+```
+    npm i cloudcmd -g
+    cloudcmd
+```
+
 Гарячие клавиши
 ---------------
 Гарячие клавии работают во всех современных веб браузерах (кроме IE - он особенный).
@@ -92,26 +114,6 @@ Cloud Commander 0.7.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 - Выгрузить в (Dropbox, Github, GDrive)
 - Загрузить
 - Новый (Файл, Папка, с облака)
-
-Установка
----------------
-Установить **Cloud Commander** очень просто (проще простого).
-Всё что вам нужно сделать: 
-
-- установить [node.js](//nodejs.org/ "node.js")
-- [скачать](https://github.com/coderaiser/cloudcmd/archive/master.zip)
-и распокавать или просто клонировать репозиторий с github:
-
-```
-    git clone git://github.com/coderaiser/cloudcmd.git
-    cd cloudcmd
-    node cloudcmd
-```
-или установить в npm:
-```
-    npm i cloudcmd -g
-    cloudcmd
-```
 
 Настройки
 ---------------
