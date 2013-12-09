@@ -64,6 +64,17 @@ Cloud Commander 0.7.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
     cloudcmd
 ```
 
+Дополнительные модули
+---------------
+**Серверная Сторона Cloud Commander** не использует дополнительных модулей для основного функционала.
+Но для минификации и оптимизации можна назначить (и установить) следующие модули:
+[Minify] (https://github.com/coderaiser/minify "Minify")
+и [socket.io] (https://github.com/LearnBoost/socket.io "Socket.IO").
+
+Что бы установить дополнительные модули наберите находясь в папке **Cloud Commander**:
+
+    npm i
+
 Гарячие клавиши
 ---------------
 Гарячие клавии работают во всех современных веб браузерах (кроме IE - он особенный).
@@ -223,17 +234,6 @@ isn't exist.
 
     npm r cloudcmd
     npm i cloudcmd
-
-Дополнительные модули
----------------
-**Серверная Сторона Cloud Commander** не использует дополнительных модулей для основного функционала.
-Но для минификации и оптимизации можна назначить (и установить) следующие модули:
-[Minify] (https://github.com/coderaiser/minify "Minify")
-и [socket.io] (https://github.com/LearnBoost/socket.io "Socket.IO").
-
-Что бы установить дополнительные модули (наберите в папке **Cloud Commander**):
-
-    npm i
 
 Расширения
 ---------------
