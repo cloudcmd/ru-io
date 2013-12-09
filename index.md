@@ -112,12 +112,21 @@ Cloud Commander 0.7.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 ![Edit](http://cloudcmd.io/img/screen/edit.png "Edit")
 
 
-###Гарячие клавиши редактирования
+###Гарячие клавиши
 - **F4**                - открыть
 - **Ctrl + s**          - сохранить
 - **Esc**               - закрыть
  
 Подробнее [Гарячие клавиши Ace](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts "Гарячие клавиши Ace").
+
+Консоль
+---------------
+[Демо](http://io.cloudcmd.io#/console "Консоль")
+![Консоль](http://cloudcmd.io/img/screen/console.png "Консоль")
+
+###Гарячие клавиши
+- **~**                 - открыть
+- **Esc**               - закрыть
 
 Гарячие клавиши просмотра
 ---------------
