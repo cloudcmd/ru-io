@@ -161,18 +161,18 @@ Cloud Commander 0.7.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 
 ```js
 {
-    "api_url"   :"/api/v1",
-    "appcache"  : false,            /* html5 feature appcache                   */
-    "cache"     : true,             /* cashing on a client                      */
-    "minification" : {              /* minification of js,css,html and img      */
-        "js"    : false,            /* minify module neaded                     */
-        "css"   : false,            /* npm i minify                             */
-        "html"  : true,
-        "img"   : false
-    },
-    "show_keys_panel" : true,       /* show classic panel with buttons of keys  */
+    "api_url"           :"/api/v1",
+    "appCache"          : false,            /* кешировать файлы для оффлайн использования                   */
+    "analytics"         : true,             /* поддержка google analytics                                  */
+    "diff"              : false,            /* при сохранении - отсылает патч, а не весь файл            */
+    "notifications"     : false,            /* показувати сповіщення, коли вкладка не активна              */
+    "localStorage"      : true,             /* кеширование содержимого папки                                      */
+    "minify"            : true,             /* минификация js,css,html и изображений                        */
+    "cache"             : true,             /* кеширование                                      */
+    "online"            : true,             /* загрузить файлы js с cdn или Local path                     */
+    "logs"              : false,            /* выводить в логи или в консоль                                */
+    "showKeysPanel"     : true,             /* показать классическую панель с кнопками функциональных клавишь  */
     "server"    : true,             /* server mode or testing mode              */
-    "logs"      : false,            /* logs or console ouput                    */
     "socket"    : true              /* enable web sockets                       */
     "port"      : 80,               /* http port or null(default)               */
     "sslPort"   : 443,              /* https port or null(default)              */
