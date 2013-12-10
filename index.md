@@ -227,7 +227,7 @@ do something like this:
     
     nohup node cloudcmd
 
-Authorization
+Авторизация
 ---------------
 Cloud Commander может авторизовывать клиетов через openID на GitHub.
 Всё что для этого нужно - добавить **id** и **secret** приложений со страницы 
