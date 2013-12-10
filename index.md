@@ -247,16 +247,14 @@ or **shell/secret.sh** *(on nix)*.
 
     cloudcmd
 
-После чего Cloud Commander прочитает конфигурационный файл **config.json** и запустит сервер
-на 80-ом порту, if none of port varibles(*cloud9*, *cloudfoundry* and *nodester*)
-isn't exist.
-Затем набирайте в браузере
+После чего , Cloud Commander считает информацию с порта з файла настроек [config.json](http://github.com/coderaiser/cloudcmd/blob/master/json/config.json#L17) и запустит сервер
+на этом порту ( **8000**, по умолчанию ), если сменных портов не существует( *cloud9*, *cloudfoundry* и *nodester* ).
+Тогда просто наберите в браузере:
 
-    http://127.0.0.1
-    
+    http://127.0.0.1:8000
 или
 
-    http://localhost
+    http://localhost:8000
 
 Обновление
 ---------------
