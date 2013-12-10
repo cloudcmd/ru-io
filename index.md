@@ -162,23 +162,23 @@ Cloud Commander 0.7.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 ```js
 {
     "api_url"           :"/api/v1",
-    "appCache"          : false,            /* кешировать файлы для оффлайн использования                   */
-    "analytics"         : true,             /* поддержка google analytics                                  */
-    "diff"              : false,            /* при сохранении - отсылает патч, а не весь файл            */
-    "notifications"     : false,            /* показувати сповіщення, коли вкладка не активна              */
-    "localStorage"      : true,             /* кеширование содержимого папки                                      */
-    "minify"            : true,             /* минификация js,css,html и изображений                        */
-    "cache"             : true,             /* кеширование                                      */
-    "online"            : true,             /* загрузить файлы js с cdn или Local path                     */
-    "logs"              : false,            /* выводить в логи или в консоль                                */
+    "appCache"          : false,            /* кешировать файлы для оффлайн использования                      */
+    "analytics"         : true,             /* поддержка google analytics                                      */
+    "diff"              : false,            /* при сохранении - отсылает патч, а не весь файл                  */
+    "notifications"     : false,            /* показувати сповіщення, коли вкладка не активна                  */
+    "localStorage"      : true,             /* кеширование содержимого папки                                   */
+    "minify"            : true,             /* минификация js,css,html и изображений                           */
+    "cache"             : true,             /* кеширование                                                     */
+    "online"            : true,             /* загрузить файлы js с cdn или Local path                         */
+    "logs"              : false,            /* выводить в логи или в консоль                                   */
     "showKeysPanel"     : true,             /* показать классическую панель с кнопками функциональных клавишь  */
-    "server"    : true,             /* server mode or testing mode              */
-    "socket"    : true              /* enable web sockets                       */
-    "port"      : 80,               /* http port or null(default)               */
-    "sslPort"   : 443,              /* https port or null(default)              */
-    "ip"        : "127.0.0.1",      /* ip or null(default)                      */
-    "ssl"       : true              /* should use https?                        */
-    "rest"      : true              /* enable rest interface                    */
+    "server"            : true,             /* режим сервера или тестирования                                  */
+    "socket"            : true              /* включить web сокеты                                             */
+    "port"              : 8000,             /* http порт                                                       */
+    "sslPort"           : 443,              /* https порт                                                      */
+    "ip"                : null,             /* ip или null(по умолчанию)                                       */
+    "ssl"               : false             /* использовать https?                                             */
+    "rest"              : true              /* включить остальной интерфейс                                    */
 }
 ```
 
