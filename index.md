@@ -290,7 +290,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 ---------------
 Cloud Commander может авторизовывать клиетов через openID на GitHub.
 Всё что для этого нужно - добавить **id** и **secret** приложений со страницы 
-настроек github в **config.json** (id just) and env varible (secret)
+настроек github в **config.json** или в переменные окружения 
 с именами: *github_id*, *github_secret*, *dropbox_key*, *dropbox_secret* и т.д.
 Для дополнительной информации, смотрите **config.json** и **shell/seret.bat** *(для win32)*
 или **shell/secret.sh** *(для nix)*.
