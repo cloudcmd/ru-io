@@ -182,6 +182,19 @@ Cloud Commander 0.7.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 }
 ```
 
+Если вы изменили **config** и хотите продолжать обновляться при помощи git,
+Вам нужно применить следующую команду в корневой директории **Cloud Commander**:
+
+```
+git update-index --assume-unchanged json/config.json
+```
+
+Что бы вернуться к отслеживанию:
+
+```
+git update-index --no-assume-unchanged json/config.json
+```
+
 Server
 ---------------
 Standard practices say no non-root process gets to talk to
