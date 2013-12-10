@@ -229,12 +229,12 @@ do something like this:
 
 Authorization
 ---------------
-Thru openID Cloud Commander could authorize clients on GitHub.
-All things that should be done is must be added **id** and **secret** of application
-from github settings page and added to **config.json** (id just) and env varible (secret)
-with names: *github_id*, *github_secret*, *dropbox_key*, *dropbox_secret* etc.
-For more information see **config.json** and **shell/seret.bat** *(on win32)*
-or **shell/secret.sh** *(on nix)*.
+Cloud Commander может авторизовывать клиетов через openID на GitHub.
+Всё что для этого нужно - добавить **id** и **secret** приложений со страницы 
+настроек github в **config.json** (id just) and env varible (secret)
+с именами: *github_id*, *github_secret*, *dropbox_key*, *dropbox_secret* и т.д.
+Для дополнительной информации, смотрите **config.json** и **shell/seret.bat** *(для win32)*
+или **shell/secret.sh** *(для nix)*.
 
 
 Запуск
