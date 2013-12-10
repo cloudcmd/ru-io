@@ -195,35 +195,94 @@ git update-index --assume-unchanged json/config.json
 git update-index --no-assume-unchanged json/config.json
 ```
 
-Server
+Сервер
 ---------------
-Standard practices say no non-root process gets to talk to
-the Internet on a port less than 1024. Anyway I suggest you
-to start Cloud Commander as non-root. How it could be solved?
-There is a couple easy and fast ways. One of them is port forwarding by iptables.
-Just run [shell/addtables.sh](shell/addtables.sh) for default options.
+Обычно процессы, запущенные правами не root не могут обращаться к портам ниже чем 1024.
+В любом случае, Я советую Вам запускать Cloud Commander не под root. Как это сделать?!
+Существует несколько простых и быстрых вариантов. Один из них - продвижение портвв через iptables.
 
-    @:/tmp/cloudcmd (dev) $ sudo iptables -t nat -L # look rules before
-    @:/tmp/cloudcmd (dev) $ sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8000
-    @:/tmp/cloudcmd (dev) $ sudo iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 4430
-    @:/tmp/cloudcmd (dev) $ sudo iptables -t nat -L # look reles after
+###Iptables
+Просто запустите [shell/addtables.sh](http://github.com/coderaiser/cloudcmd/blob/master/shell/addtables.sh) для стандартных опций.
 
-You should see somethins like this ( **8000** and **4430** should be in config as **port** and **sslPort** )
+```sh
+@:/tmp/cloudcmd (dev) $ sudo iptables -t nat -L # look rules before
+@:/tmp/cloudcmd (dev) $ sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8000
+@:/tmp/cloudcmd (dev) $ sudo iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 4430
+@:/tmp/cloudcmd (dev) $ sudo iptables -t nat -L # look reles after
+```
+Ви должны увидеть что-то такое ( **8000** и **4430** должно быть в config как **port** и **sslPort** )
 
     target     prot opt source               destination
     REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:http redir ports 8000
     REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:https redir ports 4430
 
-Если захотите все вернуть на свои места, просто очистите правила ( **1** and **2** it's rules numbers,
-in your list they could differ).
+Если захотите всё вернуть, просто очистите правила ( **1** и **2** это номера правил,
+в вашому случае они могут отличаться).
 
 ```sh
 @:/tmp/cloudcmd (dev) $ sudo iptables -t nat -D PREROUTING 1
 @:/tmp/cloudcmd (dev) $ sudo iptables -t nat -D PREROUTING 2
 ```
 
-To run Cloud Commander as daemon in linux you could set **log** to true in config and
-do something like this:
+###nginx
+Возьмите [nginx](http://nginx.org/ "nginx"). В linux это можна сделать так:
+
+```sh
+sudo apt-get install nginx #for ubuntu and debian
+```
+
+И сделайте хост файл **/etc/nginx/sites-enabled/io.cloudcmd.io**
+( *io.cloudcmd.io* ваше доменное імя) с содержимым:
+
+```sh
+server {
+    listen 80;
+    client_max_body_size 100m;
+    server_name io.cloudcmd.io;
+    access_log /var/log/nginx/io.cloudcmd.io.access.log;
+    location / {
+        proxy_pass    http://127.0.0.1:8000/;
+    }
+}
+```
+
+Если вы желаете прибавить **ssl**, прибавьте несколько строчек в раздел сервера:
+
+```sh
+server {
+    listen 443;
+    client_max_body_size 100m;
+    ssl                  on;
+    ssl_certificate      /home/coderaiser/cloudcmd/ssl/ssl.crt;
+    ssl_certificate_key  /home/coderaiser/cloudcmd/ssl/ssl.key;
+    server_name io.cloudcmd.io;
+    access_log /var/log/nginx/io.cloudcmd.io.access.log;
+    location / {
+        proxy_pass    http://127.0.0.1:8000/;
+    }
+}
+```
+
+Если Вам нужно перенаправление с **http** на **https**, просто сделайте так:
+
+```sh
+server {
+    listen 80;
+    server_name admin.cloudcmd.io;
+    rewrite ^ https://io.cloudcmd.io$request_uri? permanent; #301 redirect
+    access_log /var/log/nginx/io.cloudcmd.io.access.log;
+}
+```
+
+```sh
+# create symlink of this file
+ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
+# restart nginx
+/etc/init.d/nginx restart
+```
+
+Для запуска Cloud Commander под daemon в linux установите **log** в **true** в config-файлe и
+введите:
     
     nohup node cloudcmd
 
