@@ -12,5 +12,5 @@ canonical       : ru.cloudcmd.io
 repoName        : cloudcmd/ru/edit/master/last.md 
 improveText     : "Нашли ошибку? Помогите её исправить."
 repoSource      : coderaiser/cloudcmd
-image           : //cloudcmd.io/img/logo/cloudcmd.png
-favicon         : //ru.cloudcmd.io/favicon.ico
+image           : http://cloudcmd.io/img/logo/cloudcmd.png
+favicon         : http://ru.cloudcmd.io/favicon.ico
