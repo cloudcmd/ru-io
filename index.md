@@ -28,18 +28,21 @@ Cloud Commander 0.8.2 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 [JitSu_LIVE_IMG]:           http://status-ok.cloudcmd.io/host/cloudcmd.jit.su/fs?json "JitSu"
 [HEROKU_LIVE_IMG]:          http://status-ok.cloudcmd.io/host/cloudcmd.herokuapp.com/fs?json "Heroku"
 
-**Cloud Commander** - облачный файловый менеджер с консолью и редактором.
+**Cloud Commander** - облачный файловый менеджер с консолью и редактором. Поможет вам: **создавать**, **редактировать**, **передвигать** и **удалять файлы** и **папки** прямо в вашем любимом браузере с любого компьютера. Файловый менеджер состоит из двух частей: 
+- **клиентской** (с приятным простым интерфейсом)
+- **серверной** (разработанной на Node.js)
 
 ![Cloud Commander](http://cloudcmd.io/img/logo/cloudcmd.png "Cloud Commander")
 
 Преимущества
 ---------------
-- Открытый код.
+- Открытый код (**MIT License**).
 - Две классические панели.
 - Работает под Windows, Linux и Mac OS.
 - Может использоваться локально или удаленно.
 - Имеет консоль и редактор.
 - Написан на JavaScript/Node.js.
+- Работает в браузере.
 
 Установка
 ---------------
@@ -81,7 +84,8 @@ Cloud Commander 0.8.2 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 - **Home**              - в начало списка
 - **End**               - в конец списка
 - **Shift + Delete**    - удалить без запроса о подтверждении
-- **Insert**            - выбрать(выделить) текущий файл
+- **Space**             - выделить текущий файл (и показать размер папки)
+- **Insert**            - выделить текущий файл (и перейти к следующему)
 - **Shift + F10**       - контекстное меню
 - **~**                 - консоль
 - **Ctrl + Click**      - открыть файл в новой вкладке
@@ -310,6 +314,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 Для расширения функционала файлового менеджера использованы следующие модули:
 
 - [Ace]                     [AceURL]
+- [Minify]                  [MinifyURL]
 - [FancyBox]                [FancyBoxURL]
 - [jQuery-contextMenu]      [jQuery-contextMenuURL]
 - [jq-console]              [jq-consoleURL]
@@ -321,6 +326,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 - [fs-extra]                [fs-extraURL]
 
 [AceURL]:                   http://ace.ajax.org/ "Ace"
+[MinifyURL]:                http://coderaiser.github.io/minify "Minify"
 [FancyBoxURL]:              //github.com/fancyapps/fancyBox "FancyBox"
 [jQuery-contextMenuURL]:    //github.com/medialize/jQuery-contextMenu "jQuery-contextMenu"
 [jq-consoleURL]:            //github.com/replit/jq-console‎ "jq-console"
@@ -368,7 +374,6 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 - *2012.07.14*, **[v0.1.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.1.2.zip)**
 - *2012.07.11*, **[v0.1.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.1.1.zip)**
 - *2012.07.09*, **[v0.1.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.1.0.zip)**
-
 
 Особая благодарность:
 ---------------
