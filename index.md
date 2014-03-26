@@ -159,7 +159,7 @@ Cloud Commander 0.8.3
 
 Настройки
 ---------------
-Все основные настройки, можна осуществлять в config.json.
+Все основные настройки, можно осуществлять в config.json.
 
 ```js
 {
@@ -231,7 +231,7 @@ REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:https redi
 ```
 
 ###nginx
-Возьмите [nginx](http://nginx.org/ "nginx"). В linux это можна сделать так:
+Возьмите [nginx](http://nginx.org/ "nginx"). В linux это можно сделать так:
 
 ```sh
 sudo apt-get install nginx #for ubuntu and debian
