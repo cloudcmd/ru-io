@@ -114,19 +114,19 @@ Cloud Commander 0.8.3
 ![Edit](http://cloudcmd.io/img/screen/edit.png "Edit")
 
 
-###Гарячие клавиши
+###Горячие клавиши
 - **F4**                - открыть
 - **Ctrl + s**          - сохранить
 - **Esc**               - закрыть
  
-Подробнее [Гарячие клавиши Ace](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts "Гарячие клавиши Ace").
+Подробнее [Горячие клавиши Ace](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts "Горячие клавиши Ace").
 
 Консоль
 ---------------
 [Демо](http://io.cloudcmd.io#/console "Консоль")
 ![Консоль](http://cloudcmd.io/img/screen/console.png "Консоль")
 
-###Гарячие клавиши
+###Горячие клавиши
 - **~**                 - открыть
 - **Esc**               - закрыть
 
@@ -135,7 +135,7 @@ Cloud Commander 0.8.3
 [Демо](http://io.cloudcmd.io#/config "Настройки")
 ![Настройки](http://cloudcmd.io/img/screen/config.png "Настройки")
 
-###Гарячие клавиши
+###Горячие клавиши
 - **F10**               - открыть
 - **Esc**               - закрыть
 
@@ -153,7 +153,7 @@ Cloud Commander 0.8.3
 - Загрузить
 - Новый (Файл, Папка, с облака)
  
-###Гарячие клавиши
+###Горячие клавиши
 - **F9**                - открыть
 - **Esc**               - закрыть
 
