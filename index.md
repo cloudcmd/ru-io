@@ -14,7 +14,7 @@ lang:
    translation: на Русском
 ---
 
-Cloud Commander 0.8.3
+Cloud Commander 0.8.4
 ===============
 ###[Главная][MainURL] [Блог][BlogURL] Демо(![IO][IO_LIVE_IMG] [IO][IOURL], ![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://nodei.co/npm/cloudcmd.png?downloads=true&&stars "npm install cloudcmd"
@@ -37,7 +37,7 @@ Cloud Commander 0.8.3
 - Две классические панели.
 - Возможность **авторизации**.
 - Клиент работает в веб браузере.
-- Сервер работает под **Windows, Linux и Mac OS**.
+- Сервер работает под **Windows**, **Linux** и **Mac OS**.
 - Может использоваться локально или удаленно.
 - Адаптируется под размер экрана.
 - **Редактор** с поддержкой **подсветки синтаксиса** для более чем 110 языков.
@@ -64,16 +64,17 @@ Cloud Commander 0.8.3
 
     cloudcmd
 
-После чего , Cloud Commander считает информацию с порта з файла настроек [config.json](http://github.com/coderaiser/cloudcmd/blob/master/json/config.json#L17) и запустит сервер
-на этом порту ( **8000**, по умолчанию ), если сменных портов не существует( *cloud9*, *cloudfoundry* и *nodester* ).
-Тогда просто наберите в браузере:
+После чего, Cloud Commander считывает информацию из файла настроек `json/config.json` и запускает сервер
+на стандартном порту (`8000`), если не находит переменны окружения с именами: `cloud9`, `cloudfoundry` и `nodester`.
+
+Тогда просто наберите в адресной строке браузере:
 
     http://127.0.0.1:8000
 
 Горячие клавиши
 ---------------
 
-|Key                    |Operation
+|Клавиша                |Действие
 |:----------------------|:--------------------------------------------
 | `F1`                  | помощь
 | `F2`                  | переименовать
@@ -115,9 +116,14 @@ Cloud Commander 0.8.3
 
 
 ###Горячие клавиши
-- **F4**                - открыть
-- **Ctrl + s**          - сохранить
-- **Esc**               - закрыть
+|Клавиша                |Действие
+|:----------------------|:--------------------------------------------
+| `F4`                  | открыть
+| `Ctrl + s`            | сохранить
+| `Ctrl + f`            | поиск
+| `Ctrl + f + f`        | замена
+| `Ctrl + g`            | перейти к строке
+| `Esc`                 | закрыть
  
 Подробнее [Горячие клавиши Ace](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts "Горячие клавиши Ace").
 
@@ -127,8 +133,10 @@ Cloud Commander 0.8.3
 ![Консоль](http://cloudcmd.io/img/screen/console.png "Консоль")
 
 ###Горячие клавиши
-- **~**                 - открыть
-- **Esc**               - закрыть
+|Клавиша                |Действие
+|:----------------------|:--------------------------------------------
+| `~`                   | открыть
+| `Esc`                 | закрыть
 
 Настройки
 ---------------
@@ -136,8 +144,10 @@ Cloud Commander 0.8.3
 ![Настройки](http://cloudcmd.io/img/screen/config.png "Настройки")
 
 ###Горячие клавиши
-- **F10**               - открыть
-- **Esc**               - закрыть
+|Клавиша                |Действие
+|:----------------------|:--------------------------------------------
+| `F10`                 | открыть
+| `Esc`                 | закрыть
 
 Меню
 ---------------
@@ -149,17 +159,22 @@ Cloud Commander 0.8.3
 - Правка
 - Переименовать
 - Удалить
+- Zip файл
+- UnZip файл
+- Выделить всё
 - Выгрузить в (Dropbox, Github, GDrive)
 - Загрузить
 - Новый (Файл, Папка, с облака)
  
 ###Горячие клавиши
-- **F9**                - открыть
-- **Esc**               - закрыть
+|Клавиша                |Действие
+|:----------------------|:--------------------------------------------
+| `F9`                  | открыть
+| `Esc`                 | закрыть
 
 Настройки
 ---------------
-Все основные настройки, можно осуществлять в config.json.
+Все основные настройки, можно осуществлять в `json/config.json`.
 
 ```js
 {
@@ -170,6 +185,7 @@ Cloud Commander 0.8.3
     "appCache"          : false,            /* кешировать файлы для оффлайн использования                      */
     "analytics"         : true,             /* поддержка google analytics                                      */
     "diff"              : false,            /* при сохранении - отсылает патч, а не весь файл                  */
+    "zip"               : false,            /* zip текст перед отсылкой / unzip перед сохранением              */
     "notifications"     : false,            /* показувати сповіщення, коли вкладка не активна                  */
     "localStorage"      : true,             /* кеширование содержимого папки                                   */
     "minify"            : true,             /* минификация js,css,html и изображений                           */
@@ -207,13 +223,13 @@ git update-index --no-assume-unchanged json/config.json
 Существует несколько простых и быстрых вариантов. Один из них - перенаправление портов через iptables.
 
 ###Iptables
-Просто запустите [shell/addtables.sh](http://github.com/coderaiser/cloudcmd/blob/master/shell/addtables.sh) для стандартных опций.
+Просто запустите `shell/addtables.sh` для стандартных опций.
 
 ```sh
-# iptables -t nat -L # look rules before
-# iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8000
-# iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 4430
-# iptables -t nat -L # look reles after
+iptables -t nat -L # look rules before
+iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8000
+iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 4430
+iptables -t nat -L # look reles after
 ```
 
 Вы должны увидеть что-то вроде ( **8000** и **4430** должно быть в config как **port** и **sslPort** )
@@ -226,8 +242,8 @@ REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:https redi
 в вашому случае они могут отличаться).
 
 ```sh
-# iptables -t nat -D PREROUTING 1
-# iptables -t nat -D PREROUTING 2
+iptables -t nat -D PREROUTING 1
+iptables -t nat -D PREROUTING 2
 ```
 
 ###nginx
@@ -311,7 +327,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 Список дополнительных модулей
 ---------------
-Для расширения функционала файлового менеджера использованы следующие модули:
+Для расширения функционала файлового менеджера используются следующие модули:
 
 - [Ace]                     [AceURL]
 - [Minify]                  [MinifyURL]
@@ -355,6 +371,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 История версий
 ---------------
+- *2014.04.28*, **[v0.8.4](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.8.4.zip)**
 - *2014.03.19*, **[v0.8.3](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.8.3.zip)**
 - *2014.03.03*, **[v0.8.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.8.2.zip)**
 - *2014.02.13*, **[v0.8.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.8.1.zip)**
@@ -378,5 +395,5 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 Особая благодарность:
 ---------------
-- [Polietilena](http://polietilena.github.io/ "Polietilena") за [logo](img/logo/cloudcmd.png "logo") и [favicon](img/favicon/favicon.png "favicon").
-- [TarZak](https://github.com/tarzak) за [Русский](http://ru.cloudcmd.io "Русский") и [Украинский](http://ua.cloudcmd.io "Украинский") переводы.
+- [Polietilena](http://polietilena.github.io/ "Polietilena") за **logo** and **favicon**.
+- [TarZak](https://github.com/tarzak) за русский и украинский переводы.
