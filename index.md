@@ -14,7 +14,7 @@ lang:
    translation: на Русском
 ---
 
-Cloud Commander 1.1.1
+Cloud Commander 1.2.0
 ===============
 ###[Главная][MainURL] [Блог][BlogURL] Демо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -48,26 +48,39 @@ Cloud Commander 1.1.1
 Установить **Cloud Commander** проще простого.
 
 - установить [node.js](//nodejs.org/ "node.js").
-- установить ```cloudcmd``` через npm.
+- установить ```cloudcmd``` через npm:
+ 
+```sh
+npm install cloudcmd #local install или
+npm install cloudcmd -g #global install
+```
 
 ![NPM_INFO][NPM_INFO_IMG]
 
 Запуск
 ---------------
-Что бы запустить **Cloud Commander** нужна всего одна команда:
-    
-    node cloudcmd
+Что бы запустить **Cloud Commander**, измените директорию на `node_modules/cloudcmd` и
+используйте команду:
 
-при глобальной установке:
+    node bin/cloudcmd
+
+или при установке с флагом `-g`, просто введите в любой папке:
 
     cloudcmd
 
-Cloud Commander считывает информацию из файла настроек `json/config.json` и запускает сервер
-на стандартном порту (`8000`), если не находит переменные окружения с именами `cloud9`, `cloudfoundry` и `nodester`.
+**Cloud Commander** поддерживает параметры в командной строке:
 
-Для начала работы просто наберите в адресной строке браузера
+|Параметр               |Действие
+|:----------------------|:--------------------------------------------
+| `-h, --help`          | помощь
+| `-v, --version`       | вывести версию
+| `-p, --port`          | назначить порт
 
-    http://127.0.0.1:8000
+Если не задано параметров, Cloud Commander читает информацию с `json/config.json` и использует порт оттуда (`8000` по умолчанию), если переменных `PORT` или `VCAP_APP_PORT` не существует.
+
+Что бы начать работу, введите в адресной строке вашего браузера:
+
+    http://localhost:<port>
 
 Обновление
 ---------------
@@ -76,11 +89,12 @@ Cloud Commander считывает информацию из файла наст
 Обновление происходит автоматически, так же это можно сделать в ручную.
 Если Вы клонировали репозиторий, Вы можете получить последние изменения командой:
 
-   git pull
+    git pull
+    npm i
 
 Если Вы установили Cloud Commander при помощи `npm`, просто переустановите его:
 
-   npm i cloudcmd -g
+    npm i cloudcmd -g
 
 После чего нужно очистить кэш браузера, перезапустить Cloud Commander и обновить страницу.
 
@@ -105,6 +119,9 @@ Cloud Commander считывает информацию из файла наст
 | `(*)`                 | виделить/снять выделение со всех файлов
 | `(+)`                 | расширить выделение
 | `(-)`                 | сузить выделение
+| `Ctrl + x`            | вырезать в буфер
+| `Ctrl + с`            | копировать в буфер
+| `Ctrl + v`            | вставить с буфера
 | `Ctrl + r`            | обновить
 | `Ctrl + d`            | очистить локальное хранилище
 | `Alt  + q`            | отключить привязку клавиш
@@ -174,10 +191,13 @@ Cloud Commander считывает информацию из файла наст
 - Удалить
 - Zip файл
 - UnZip файл
-- Выделить всё
 - Выгрузить в (Dropbox, Github, GDrive)
 - Загрузить
 - Новый (Файл, Папка, с облака)
+- Вырезать
+- Копировать
+- Вставить
+- Выделить всё / снять выделение
  
 ###Горячие клавиши
 |Клавиша                |Действие
@@ -194,24 +214,24 @@ Cloud Commander считывает информацию из файла наст
     "auth"              : false,            /* разрешить http авторизацию                                      */
     "username"          : "root",           /* имя пользователя для авторизации                                */
     "password"          : "toor",           /* хеш пароля в sha-1 для авторизации                              */
-    "appCache"          : false,            /* кешировать файлы для оффлайн использования                      */
     "analytics"         : true,             /* поддержка google analytics                                      */
     "diff"              : false,            /* при сохранении - отсылает патч, а не весь файл                  */
     "zip"               : false,            /* zip текст перед отсылкой / unzip перед сохранением              */
     "notifications"     : false,            /* показывать оповещения, если вкладка не активна                  */
     "localStorage"      : true,             /* кеширование содержимого папки                                   */
+    "buffer"            : true,             /* буфер для копирования файлов                                    */
+    "dirStorage"        : true,             /* сохранить листинг директории в localStorage                     */
     "minify"            : true,             /* минификация js, css, html и изображений                         */
     "cache"             : true,             /* кеширование                                                     */
     "online"            : true,             /* загрузить файлы js из cdn или Local path                        */
     "logs"              : false,            /* выводить в логи или в консоль                                   */
     "showKeysPanel"     : true,             /* показать классическую панель с кнопками функциональных клавиш   */
     "server"            : true,             /* режим сервера или тестирования                                  */
-    "socket"            : true              /* включить web сокеты                                             */
+    "socket"            : true,             /* включить web сокеты                                             */
     "port"              : 8000,             /* http порт                                                       */
     "sslPort"           : 443,              /* https порт                                                      */
     "ip"                : null,             /* ip или null(по умолчанию)                                       */
     "ssl"               : false             /* использовать https?                                             */
-    "rest"              : true              /* включить остальной интерфейс                                    */
 }
 ```
 
@@ -371,6 +391,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 История версий
 ---------------
+- *2014.08.29*, **[v1.2.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.2.0.zip)**
 - *2014.07.18*, **[v1.1.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.1.1.zip)**
 - *2014.07.10*, **[v1.1.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.1.0.zip)**
 - *2014.07.03*, **[v1.0.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.0.0.zip)**
