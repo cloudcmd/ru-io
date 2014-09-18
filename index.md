@@ -14,7 +14,7 @@ lang:
    translation: на Русском
 ---
 
-Cloud Commander 1.2.0
+Cloud Commander 1.3.0
 ===============
 ###[Главная][MainURL] [Блог][BlogURL] Демо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -125,7 +125,7 @@ npm install cloudcmd -g #global install
 | `Ctrl + r`            | обновить
 | `Ctrl + d`            | очистить локальное хранилище
 | `Alt  + q`            | отключить привязку клавиш
-| `Alt  + s`            | вернуть все привязки клавиш
+| `Alt  + s`            | включить привязки клавиш
 | `Ctrl + A`            | выбрать (выделить) все файлы на панели
 | `Up`, `Down`, `Enter` | перемещение по файловой системе
 | `Ctrl + \`            | перейти в корневую папку
@@ -189,8 +189,8 @@ npm install cloudcmd -g #global install
 - Правка
 - Переименовать
 - Удалить
-- Zip файл
-- UnZip файл
+- запаковать
+- распаковать
 - Выгрузить в (Dropbox, Github, GDrive)
 - Загрузить
 - Новый (Файл, Папка, с облака)
@@ -224,14 +224,11 @@ npm install cloudcmd -g #global install
     "minify"            : true,             /* минификация js, css, html и изображений                         */
     "cache"             : true,             /* кеширование                                                     */
     "online"            : true,             /* загрузить файлы js из cdn или Local path                        */
-    "logs"              : false,            /* выводить в логи или в консоль                                   */
     "showKeysPanel"     : true,             /* показать классическую панель с кнопками функциональных клавиш   */
     "server"            : true,             /* режим сервера или тестирования                                  */
     "socket"            : true,             /* включить web сокеты                                             */
     "port"              : 8000,             /* http порт                                                       */
-    "sslPort"           : 443,              /* https порт                                                      */
     "ip"                : null,             /* ip или null(по умолчанию)                                       */
-    "ssl"               : false             /* использовать https?                                             */
 }
 ```
 
@@ -391,6 +388,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 История версий
 ---------------
+- *2014.09.18*, **[v1.3.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.3.0.zip)**
 - *2014.08.29*, **[v1.2.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.2.0.zip)**
 - *2014.07.18*, **[v1.1.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.1.1.zip)**
 - *2014.07.10*, **[v1.1.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.1.0.zip)**
