@@ -14,7 +14,7 @@ lang:
    translation: на Русском
 ---
 
-Cloud Commander 1.3.1
+Cloud Commander 1.3.2
 ===============
 ###[Главная][MainURL] [Блог][BlogURL] Демо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -84,14 +84,6 @@ npm install cloudcmd -g #global install
 
 Обновление
 ---------------
-**Cloud Commander** обновляется часто.
-
-Обновление происходит автоматически, так же это можно сделать в ручную.
-Если Вы клонировали репозиторий, Вы можете получить последние изменения командой:
-
-    git pull
-    npm i
-
 Если Вы установили Cloud Commander при помощи `npm`, просто переустановите его:
 
     npm i cloudcmd -g
@@ -191,6 +183,7 @@ npm install cloudcmd -g #global install
 - Удалить
 - запаковать
 - распаковать
+- Выгрузить
 - Выгрузить в (Dropbox, Github, GDrive)
 - Загрузить
 - Новый (Файл, Папка, с облака)
@@ -387,6 +380,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 История версий
 ---------------
+- *2014.10.02*, **[v1.3.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.3.2.zip)**
 - *2014.09.22*, **[v1.3.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.3.1.zip)**
 - *2014.09.18*, **[v1.3.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.3.0.zip)**
 - *2014.08.29*, **[v1.2.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.2.0.zip)**
