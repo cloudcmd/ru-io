@@ -14,7 +14,7 @@ lang:
    translation: на Русском
 ---
 
-Cloud Commander 1.3.2
+Cloud Commander 1.4.0
 ===============
 ###[Главная][MainURL] [Блог][BlogURL] Демо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -22,8 +22,8 @@ Cloud Commander 1.3.2
 [BlogURL]:                  http://blog.cloudcmd.io "Блог"
 [JitSuURL]:                 http://cloudcmd.jit.su "JitSu"
 [HerokuURL]:                http://cloudcmd.herokuapp.com/ "Heroku"
-[JitSu_LIVE_IMG]:           https://status-ok.cloudcmd.io/host/cloudcmd.jit.su/img/txt.png "JitSu"
-[HEROKU_LIVE_IMG]:          https://status-ok.cloudcmd.io/host/cloudcmd.herokuapp.com/img/txt.png "Heroku"
+[JitSu_LIVE_IMG]:           https://status-io.cloudcmd.io/host/cloudcmd.jit.su/img/txt.png "JitSu"
+[HEROKU_LIVE_IMG]:          https://status-io.cloudcmd.io/host/cloudcmd.herokuapp.com/img/txt.png "Heroku"
 
 **Cloud Commander** - двухпанельный веб файл менеджер с консолью и редактором. Поможет вам управлять сервером и работать с файлами, папками и программами в браузере на любом компьютере, смартфоне или планшете.
 
@@ -51,22 +51,17 @@ Cloud Commander 1.3.2
 - установить ```cloudcmd``` через npm:
  
 ```sh
-npm install cloudcmd #local install или
-npm install cloudcmd -g #global install
+npm i cloudcmd -g
 ```
 
 ![NPM_INFO][NPM_INFO_IMG]
 
 Запуск
 ---------------
-Что бы запустить **Cloud Commander**, измените директорию на `node_modules/cloudcmd` и
-используйте команду:
-
-    node bin/cloudcmd
-
-или при установке с флагом `-g`, просто введите в любой папке:
-
-    cloudcmd
+Для запуска наберите в консоли:
+```sh
+cloudcmd
+```
 
 **Cloud Commander** поддерживает параметры в командной строке:
 
@@ -76,19 +71,27 @@ npm install cloudcmd -g #global install
 | `-v, --version`       | вывести версию
 | `-p, --port`          | назначить порт
 
-Если не задано параметров, Cloud Commander читает информацию с `json/config.json` и использует порт оттуда (`8000` по умолчанию), если переменных `PORT` или `VCAP_APP_PORT` не существует.
+Если не задано параметров, Cloud Commander читает информацию с `~/.cloudcmd.json` и использует порт оттуда (`8000` по умолчанию), если переменных `PORT` или `VCAP_APP_PORT` не существует.
 
 Что бы начать работу, введите в адресной строке вашего браузера:
 
-    http://localhost:<port>
+```
+http://localhost:<port>
+```
+
+При настройках по умолчанию:
+```
+http://localhost:8000
+```
 
 Обновление
 ---------------
-Если Вы установили Cloud Commander при помощи `npm`, просто переустановите его:
+Если Вы установили Cloud Commander при помощи `npm`, остановите приложение и переустановите его:
+```sh
+npm i cloudcmd -g
+```
 
-    npm i cloudcmd -g
-
-После чего нужно очистить кэш браузера, перезапустить Cloud Commander и обновить страницу.
+После чего запустите его снова, почистите кэш и обновите страницу.
 
 Горячие клавиши
 ---------------
@@ -116,8 +119,6 @@ npm install cloudcmd -g #global install
 | `Ctrl + v`            | вставить с буфера
 | `Ctrl + r`            | обновить
 | `Ctrl + d`            | очистить локальное хранилище
-| `Alt  + q`            | отключить привязку клавиш
-| `Alt  + s`            | включить привязки клавиш
 | `Ctrl + A`            | выбрать (выделить) все файлы на панели
 | `Up`, `Down`, `Enter` | перемещение по файловой системе
 | `Ctrl + \`            | перейти в корневую папку
@@ -132,10 +133,33 @@ npm install cloudcmd -g #global install
 | `~`                   | консоль
 | `Ctrl + Click`        | открыть файл в новой вкладке
 
+ Просмотр
+---------------
+![View](http://cloudcmd.io/img/screen/view.png "View")
+
+### Возможности
+- Просматривать изображения.
+- Просматривать текстовые файлы.
+- Проигрывать аудио.
+- Проигрывать видео.
+
+###Горячие клавиши
+|Клавиша                |Действие
+|:----------------------|:--------------------------------------------
+| `F3`                  | открыть
+| `Esc`                 | закрыть
+
 Редактор
 ---------------
 ![Edit](http://cloudcmd.io/img/screen/edit.png "Edit")
 
+### Возможности
+- Подсветка синтаксиса подстраивается под тип файла и поддерживает более 110 языков
+- Встроенный `emmet` (для html файлов)
+- Drag'n'drop (поддерживает перетаскивание файла с рабочего стола в редактор)
+- Встроенный `jshint` (с настройками в `.jshintrc` файле)
+- Встроенный `beautifier` (с настройками в `json/beautify.json`, могут быть переназначены в `~/.beautify.json`)
+- Настраиваемые опции (`json/edit.json`)
 
 ###Горячие клавиши
 |Клавиша                |Действие
@@ -145,9 +169,11 @@ npm install cloudcmd -g #global install
 | `Ctrl + f`            | поиск
 | `Ctrl + f + f`        | замена
 | `Ctrl + g`            | перейти к строке
+| `Ctrl + b`            | beautify js, css или html
+| `Ctrl + m`            | minify js, css або html
 | `Esc`                 | закрыть
  
-Подробнее [Горячие клавиши Ace](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts "Горячие клавиши Ace").
+[Горячие клавиши Ace](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts "Горячие клавиши Ace").
 
 Консоль
 ---------------
@@ -162,6 +188,8 @@ npm install cloudcmd -g #global install
 | `Ctrl + l`            | очистить
 | `Esc`                 | закрыть
 
+[Горячие клавиши Jq-console](https://github.com/replit/jq-console#default-key-config).
+
 Настройки
 ---------------
 ![Настройки](http://cloudcmd.io/img/screen/config.png "Настройки")
@@ -171,6 +199,31 @@ npm install cloudcmd -g #global install
 |:----------------------|:--------------------------------------------
 | `F10`                 | открыть
 | `Esc`                 | закрыть
+
+Когда Вы меняете одну из опций, файл `~/.cloudcmd.json` может быть сохранен.
+Их можна поменять собственноручно в любом текстовом редакторе.
+Вот описание опций:
+
+```js
+{
+    "auth"              : false,            /* разрешить http авторизацию                                      */
+    "username"          : "root",           /* имя пользователя для авторизации                                */
+    "password"          : "toor",           /* хеш пароля в sha-1 для авторизации                              */
+    "analytics"         : true,             /* поддержка google analytics                                      */
+    "diff"              : false,            /* при сохранении - отсылает патч, а не весь файл                  */
+    "zip"               : false,            /* zip текст перед отсылкой / unzip перед сохранением              */
+    "notifications"     : false,            /* показывать оповещения, если вкладка не активна                  */
+    "localStorage"      : true,             /* кеширование содержимого папки                                   */
+    "buffer"            : true,             /* буфер для копирования файлов                                    */
+    "dirStorage"        : true,             /* сохранить листинг директории в localStorage                     */
+    "minify"            : true,             /* минификация js, css, html и изображений                         */
+    "cache"             : true,             /* кеширование                                                     */
+    "online"            : true,             /* загрузить файлы js из cdn или Local path                        */
+    "showKeysPanel"     : true,             /* показать классическую панель с кнопками функциональных клавиш   */
+    "port"              : 8000,             /* http порт                                                       */
+    "ip"                : null,             /* ip или null(по умолчанию)                                       */
+}
+```
 
 Меню
 ---------------
@@ -197,45 +250,6 @@ npm install cloudcmd -g #global install
 |:----------------------|:--------------------------------------------
 | `F9`                  | открыть
 | `Esc`                 | закрыть
-
-Настройки
----------------
-Все основные настройки, можно осуществлять в `json/config.json`.
-
-```js
-{
-    "auth"              : false,            /* разрешить http авторизацию                                      */
-    "username"          : "root",           /* имя пользователя для авторизации                                */
-    "password"          : "toor",           /* хеш пароля в sha-1 для авторизации                              */
-    "analytics"         : true,             /* поддержка google analytics                                      */
-    "diff"              : false,            /* при сохранении - отсылает патч, а не весь файл                  */
-    "zip"               : false,            /* zip текст перед отсылкой / unzip перед сохранением              */
-    "notifications"     : false,            /* показывать оповещения, если вкладка не активна                  */
-    "localStorage"      : true,             /* кеширование содержимого папки                                   */
-    "buffer"            : true,             /* буфер для копирования файлов                                    */
-    "dirStorage"        : true,             /* сохранить листинг директории в localStorage                     */
-    "minify"            : true,             /* минификация js, css, html и изображений                         */
-    "cache"             : true,             /* кеширование                                                     */
-    "online"            : true,             /* загрузить файлы js из cdn или Local path                        */
-    "showKeysPanel"     : true,             /* показать классическую панель с кнопками функциональных клавиш   */
-    "server"            : true,             /* режим сервера или тестирования                                  */
-    "port"              : 8000,             /* http порт                                                       */
-    "ip"                : null,             /* ip или null(по умолчанию)                                       */
-}
-```
-
-Если вы изменили **config** и хотите продолжать обновляться при помощи git,
-Вам нужно применить следующую команду в корневой директории **Cloud Commander**:
-
-```
-git update-index --assume-unchanged json/config.json
-```
-
-Что бы вернуться к отслеживанию:
-
-```
-git update-index --no-assume-unchanged json/config.json
-```
 
 Сервер
 ---------------
@@ -338,8 +352,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 - [Diff-Match-Patch]        [Diff-Match-PatchURL]
 - [Minify]                  [MinifyURL]
 - [FancyBox]                [FancyBoxURL]
-- [jQuery-contextMenu]      [jQuery-contextMenuURL]
-- [jq-console]              [jq-consoleURL]
+- [console-io]              [console-ioURL]
 - [github]                  [githubURL]
 - [dropbox-js]              [dropbox-jsURL]
 - [jquery]                  [jqueryURL]
@@ -352,8 +365,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 [Diff-Match-PatchURL]:      https://code.google.com/p/google-diff-match-patch/ "Diff-Match-Patch"
 [MinifyURL]:                http://coderaiser.github.io/minify "Minify"
 [FancyBoxURL]:              //github.com/fancyapps/fancyBox "FancyBox"
-[jQuery-contextMenuURL]:    //github.com/medialize/jQuery-contextMenu "jQuery-contextMenu"
-[jq-consoleURL]:            //github.com/replit/jq-console‎ "jq-console"
+[console-ioURL]:            //github.com/cloudcmd/console "console-io"
 [githubURL]:                //github.com/michael/github "github"
 [dropbox-jsURL]:            //github.com/dropbox/dropbox-js "dropbox-js"
 [jqueryURL]:                //jquery.com
@@ -380,6 +392,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 История версий
 ---------------
+- *2014.10.28*, **[v1.4.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.4.0.zip)**
 - *2014.10.02*, **[v1.3.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.3.2.zip)**
 - *2014.09.22*, **[v1.3.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.3.1.zip)**
 - *2014.09.18*, **[v1.3.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.3.0.zip)**
