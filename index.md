@@ -14,7 +14,7 @@ lang:
    translation: на Русском
 ---
 
-Cloud Commander 1.5.1
+Cloud Commander 2.0.0
 ===============
 ###[Главная][MainURL] [Блог][BlogURL] Демо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -341,59 +341,9 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 /etc/init.d/nginx restart
 ```
 
-Для запуска Cloud Commander в качестве демона в Linux установите **log** в **true** в config-файлe и
-введите:
-    
-    nohup node cloudcmd
-
-Список дополнительных модулей
----------------
-Для расширения функционала файлового менеджера используются следующие модули:
-
-- [Ace]                     [AceURL]
-- [Diff-Match-Patch]        [Diff-Match-PatchURL]
-- [Minify]                  [MinifyURL]
-- [FancyBox]                [FancyBoxURL]
-- [console-io]              [console-ioURL]
-- [github]                  [githubURL]
-- [dropbox-js]              [dropbox-jsURL]
-- [jquery]                  [jqueryURL]
-- [socket.io]               [socketIOURL]
-- [http-auth]               [httpAuthURL]
-- [rimraf]                  [rimrafURL]
-- [mkdirp]                  [mkdirpURL]
-
-[AceURL]:                   http://ace.ajax.org/ "Ace"
-[Diff-Match-PatchURL]:      https://code.google.com/p/google-diff-match-patch/ "Diff-Match-Patch"
-[MinifyURL]:                http://coderaiser.github.io/minify "Minify"
-[FancyBoxURL]:              //github.com/fancyapps/fancyBox "FancyBox"
-[console-ioURL]:            //github.com/cloudcmd/console "console-io"
-[githubURL]:                //github.com/michael/github "github"
-[dropbox-jsURL]:            //github.com/dropbox/dropbox-js "dropbox-js"
-[jqueryURL]:                //jquery.com
-[socketIOURL]:              http://socket.io
-[httpAuthURL]:              //github.com/gevorg/http-auth
-[rimrafURL]:                //github.com/isaacs/rimraf "rimraf"
-[mkdirpURL]:                //github.com/substack/node-mkdirp
-
-Присоединиться к проекту
----------------
-Если вы желаете присоединиться к проекту — направьте pull запрос в dev ветку.
-Получение dev версии **Cloud Commander**:
-
-    git clone git://github.com/coderaiser/cloudcmd.git
-    cd cloudcmd && git checkout dev
-
-Возможно, вам понадобится dev версия Minify,
-в таком случае наберите следующие команды:
-
-    cd node_modules
-    rm -rf minify
-    git clone git://github.com/coderaiser/minify
-    git checkout dev
-
 История версий
 ---------------
+- *2014.12.09*, **[v2.0.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.0.0.zip)**
 - *2014.11.21*, **[v1.5.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.5.1.zip)**
 - *2014.11.19*, **[v1.5.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.5.0.zip)**
 - *2014.11.05*, **[v1.4.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.4.1.zip)**
