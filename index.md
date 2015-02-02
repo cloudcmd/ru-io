@@ -176,7 +176,7 @@ npm i cloudcmd -g
 | `Ctrl + m`            | minify js, css або html
 | `Esc`                 | закрыть
  
-[Горячие клавиши Ace](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts "Горячие клавиши Ace").
+[Горячие клавиши Edward](https://github.com/cloudcmd/edward/#hot-keys "Горячие клавиши Edward").
 
 Консоль
 ---------------
@@ -189,7 +189,7 @@ npm i cloudcmd -g
 | `Ctrl + p`            | вставить путь текущей папки
 | `Esc`                 | закрыть
 
-[Горячие клавиши console](https://github.com/cloudcmd/console#hot-keys).
+[Горячие клавиши console](https://github.com/cloudcmd/console#hot-keys "Горячие клавиши console").
 
 Настройки
 ---------------
@@ -341,8 +341,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 История версий
 ---------------
-- *2015.02.02*, **[v2.1.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.1.0.zip)**
-- *2014.12.09*, **[v2.0.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.0.0.zip)**
+- *2014.12.09*, **[v2.1.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.0.0.zip)**
 - *2014.11.21*, **[v1.5.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.5.1.zip)**
 - *2014.11.19*, **[v1.5.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.5.0.zip)**
 - *2014.11.05*, **[v1.4.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.4.1.zip)**
