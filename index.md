@@ -14,7 +14,7 @@ lang:
    translation: на Русском
 ---
 
-Cloud Commander 2.0.0
+Cloud Commander 2.1.0
 ===============
 ###[Главная][MainURL] [Блог][BlogURL] Демо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -22,8 +22,8 @@ Cloud Commander 2.0.0
 [BlogURL]:                  http://blog.cloudcmd.io "Блог"
 [JitSuURL]:                 http://cloudcmd.jit.su "JitSu"
 [HerokuURL]:                http://cloudcmd.herokuapp.com/ "Heroku"
-[JitSu_LIVE_IMG]:           http://status-io.cloudcmd.io/host/cloudcmd.jit.su/img/txt.png "JitSu"
-[HEROKU_LIVE_IMG]:          http://status-io.cloudcmd.io/host/cloudcmd.herokuapp.com/img/txt.png "Heroku"
+[JitSu_LIVE_IMG]:           https://status-io.cloudcmd.io/host/cloudcmd.jit.su/img/txt.png "JitSu"
+[HEROKU_LIVE_IMG]:          https://status-io.cloudcmd.io/host/cloudcmd.herokuapp.com/img/txt.png "Heroku"
 
 **Cloud Commander** - двухпанельный веб файл менеджер с консолью и редактором. Поможет вам управлять сервером и работать с файлами, папками и программами в браузере на любом компьютере, смартфоне или планшете.
 
@@ -47,7 +47,7 @@ Cloud Commander 2.0.0
 
 Установить **Cloud Commander** проще простого.
 
-- установить [node.js](//nodejs.org/ "node.js").
+- установить [node.js](//nodejs.org/ "node.js") или [io.js](https://iojs.org/ "io.js") если вы этого еще не сделали.
 - установить ```cloudcmd``` через npm:
  
 ```sh
@@ -187,11 +187,9 @@ npm i cloudcmd -g
 |:----------------------|:--------------------------------------------
 | `~`                   | открыть
 | `Ctrl + p`            | вставить путь текущей папки
-| `Ctrl + z`            | отменить текущую строку
-| `Ctrl + l`            | очистить
 | `Esc`                 | закрыть
 
-[Горячие клавиши Jq-console](https://github.com/replit/jq-console#default-key-config).
+[Горячие клавиши console](https://github.com/cloudcmd/console#hot-keys).
 
 Настройки
 ---------------
@@ -343,7 +341,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 История версий
 ---------------
-- *2014.12.09*, **[v2.0.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.0.0.zip)**
+- *2014.12.09*, **[v2.1.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.0.0.zip)**
 - *2014.11.21*, **[v1.5.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.5.1.zip)**
 - *2014.11.19*, **[v1.5.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.5.0.zip)**
 - *2014.11.05*, **[v1.4.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.4.1.zip)**
