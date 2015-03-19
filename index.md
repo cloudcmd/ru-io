@@ -14,7 +14,7 @@ lang:
    translation: на Русском
 ---
 
-Cloud Commander 2.2.0
+Cloud Commander 2.2.1
 ===============
 ###[Главная][MainURL] [Блог][BlogURL] Демо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -24,6 +24,10 @@ Cloud Commander 2.2.0
 [HerokuURL]:                http://cloudcmd.herokuapp.com/ "Heroku"
 [JitSu_LIVE_IMG]:           https://status-io.cloudcmd.io/host/cloudcmd.jit.su/img/txt.png "JitSu"
 [HEROKU_LIVE_IMG]:          https://status-io.cloudcmd.io/host/cloudcmd.herokuapp.com/img/txt.png "Heroku"
+
+[DWORD]:                    https://github.com/coderaiser/dword "Редактор основанный на CodeMirror"
+[EDWARD]:                   https://github.com/cloudcmd/edward "Редактор основанный на Ace"
+[EDWARD_KEYS]:              https://github.com/cloudcmd/edward/#hot-keys "Горячие клавиши Edward"
 
 **Cloud Commander** - двухпанельный веб файл менеджер с консолью и редактором. Поможет вам управлять сервером и работать с файлами, папками и программами в браузере на любом компьютере, смартфоне или планшете.
 
@@ -38,7 +42,7 @@ Cloud Commander 2.2.0
 - Сервер работает под **Windows**, **Linux** и **Mac OS**.
 - Может использоваться локально или удаленно.
 - Адаптируется под размер экрана.
-- **Редактор** с поддержкой **подсветки синтаксиса** для более чем 110 языков.
+- **2 встроенных редактора** с поддержкой **подсветки синтаксиса**: [Dword][DWORD] и [Edward][EDWARD].
 - **Консоль** с поддержкой стандартной командной строки ОС.
 - Написан на **JavaScript/Node.js**.
 
@@ -157,7 +161,7 @@ npm i cloudcmd -g
 | `F4`                  | открыть
 | `Esc`                 | закрыть
  
-[Горячие клавиши Edward](https://github.com/cloudcmd/edward/#hot-keys "Горячие клавиши Edward")
+[Горячие клавиши Edward][EDWARD_KEYS].
 
 Консоль
 ---------------
@@ -323,6 +327,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 История версий
 ---------------
+- *2015.03.19*, **[v2.2.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.2.1.zip)**
 - *2015.03.13*, **[v2.2.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.2.0.zip)**
 - *2014.12.09*, **[v2.1.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.0.0.zip)**
 - *2014.11.21*, **[v1.5.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.5.1.zip)**
