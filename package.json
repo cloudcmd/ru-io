@@ -9,7 +9,7 @@
     "commit": "git add --all && git commit -m 'docs(index) update'",
     "push" : "git push origin gh-pages",
     "publish": "npm run release && npm run commit && npm run push",
-    "wisdom": "npm run release && npm run commit"
+    "wisdom": "npm run release"
   },
   "repository": {
     "type": "git",
