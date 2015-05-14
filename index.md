@@ -16,7 +16,7 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 2.7.1
+Cloud Commander 2.8.0
 ===============
 ###[Главная][MainURL] [Блог][BlogURL] Демо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -82,11 +82,14 @@ cloudcmd
 | `-u, --username`      | установить имя пользователя
 | `-p, --password`      | установить пароль
 | `-c, --config`        | путь к файлу с настройками
+| `--editor`            | назначить редактор: "dword" или "edward"
 | `--root`              | установить корневой каталог
 | `--port`              | назначить порт
 | `--no-auth`           | выключить авторизацию
 | `--no-server`         | не запускать сервер
 | `--no-online`         | загружать скрипты с локального сервера
+| `--minify`            | включить минификацию
+| `--no-minify`         | выключить минификацию
 
 Если не задано параметров, Cloud Commander читает информацию с `~/.cloudcmd.json` и использует порт оттуда (`8000` по умолчанию), если переменных `PORT` или `VCAP_APP_PORT` не существует.
 
@@ -132,8 +135,10 @@ npm i cloudcmd -g
 | `Ctrl + v`            | вставить из буфера
 | `Ctrl + r`            | обновить
 | `Ctrl + d`            | очистить локальное хранилище
-| `Ctrl + A`            | выбрать (выделить) все файлы на панели
+| `Ctrl + a`            | выбрать (выделить) все файлы на панели
+| `Ctrl + u`            | поменять панели местами
 | `Up`, `Down`, `Enter` | перемещение по файловой системе
+| `Alt + Left/Right`    | показать содержимое каталога под курсором в целевой панели
 | `Ctrl + \`            | перейти в корневой каталог
 | `Tab`                 | переключение между панелями
 | `Page Up`             | вверх на одну страницу
@@ -340,6 +345,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 История версий
 ---------------
+- *2015.05.14*, **[v2.8.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.8.0.tar.gz)**
 - *2015.04.24*, **[v2.7.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.7.1.tar.gz)**
 - *2015.04.24*, **[v2.7.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.7.0.tar.gz)**
 - *2015.04.17*, **[v2.6.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.6.0.tar.gz)**
