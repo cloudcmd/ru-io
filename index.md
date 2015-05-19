@@ -16,7 +16,7 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 2.9.0
+Cloud Commander 2.9.1
 ===============
 ###[Главная][MainURL] [Блог][BlogURL] Демо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -256,6 +256,13 @@ npm i cloudcmd -g
 | `F9`                  | открыть
 | `Esc`                 | закрыть
 
+Режим одной панели
+---------------
+Cloud Commander может работать в режиме одной панели, в том случае, если размер экрана не позволяет разместить вторую панель.
+Так может быть в случае использования мобильных устройств, планшетов или небольших размеров окон браузера.
+
+![Режим одной панели](http://cloudcmd.io/img/screen/one-panel-mode.png "Режим одной панели")
+
 Сервер
 ---------------
 Обычно процессы, запущенные с правами отличными от root, не могут слушать порты с номером меньше, чем 1024.
@@ -346,6 +353,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 История версий
 ---------------
+- *2015.05.19*, **[v2.9.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.9.1.tar.gz)**
 - *2015.05.15*, **[v2.9.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.9.0.tar.gz)**
 - *2015.05.14*, **[v2.8.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.8.0.tar.gz)**
 - *2015.04.24*, **[v2.7.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.7.1.tar.gz)**
