@@ -16,7 +16,7 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 3.0.0
+Cloud Commander 3.0.1
 ===============
 ###[Главная][MainURL] [Блог][BlogURL] Демо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -72,24 +72,26 @@ cloudcmd
 
 **Cloud Commander** поддерживает параметры в командной строке:
 
-|Параметр               |Действие
-|:----------------------|:--------------------------------------------
-| `-h, --help`          | помощь
-| `-v, --version`       | вывести версию и выйти
-| `-s, --save`          | сохранить настройки
-| `-o, --online`        | загружать скрипты с удаленных серверов
-| `-a, --auth`          | включить авторизацию
-| `-u, --username`      | установить имя пользователя
-| `-p, --password`      | установить пароль
-| `-c, --config`        | путь к файлу с настройками
-| `--editor`            | назначить редактор: "dword" или "edward"
-| `--root`              | установить корневой каталог
-| `--port`              | назначить порт
-| `--no-auth`           | выключить авторизацию
-| `--no-server`         | не запускать сервер
-| `--no-online`         | загружать скрипты с локального сервера
-| `--minify`            | включить минификацию
-| `--no-minify`         | выключить минификацию
+|Параметр                   |Действие
+|:--------------------------|:--------------------------------------------
+| `-h, --help`              | помощь
+| `-v, --version`           | вывести версию и выйти
+| `-s, --save`              | сохранить настройки
+| `-o, --online`            | загружать скрипты с удаленных серверов
+| `-a, --auth`              | включить авторизацию
+| `-u, --username`          | установить имя пользователя
+| `-p, --password`          | установить пароль
+| `-c, --config`            | путь к файлу с настройками
+| `--editor`                | назначить редактор: "dword" или "edward"
+| `--root`                  | установить корневой каталог
+| `--port`                  | назначить порт
+| `--no-auth`               | выключить авторизацию
+| `--no-server`             | не запускать сервер
+| `--no-online`             | загружать скрипты с локального сервера
+| `--minify`                | включить минификацию
+| `--no-minify`             | выключить минификацию
+| `--progress-of-copying`   | показывать состояние копирования
+| `--no-progress-of-copying`| не показывать состояние копирования
 
 Если не задано параметров, Cloud Commander читает информацию с `~/.cloudcmd.json` и использует порт оттуда (`8000` по умолчанию), если переменных `PORT` или `VCAP_APP_PORT` не существует.
 
@@ -227,6 +229,7 @@ npm i cloudcmd -g
     "port"              : 8000,             /* http порт                                                       */
     "ip"                : null,             /* ip или null(по умолчанию)                                       */
     "root"              : "/"               /* корневой каталог                                                */
+    "progressOfCopying" : false             /* показывать состояние копирования                                */
 }
 ```
 
@@ -353,6 +356,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 История версий
 ---------------
+- *2015.05.29*, **[v3.0.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v3.0.1.tar.gz)**
 - *2015.05.28*, **[v3.0.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v3.0.0.tar.gz)**
 - *2015.05.22*, **[v2.9.3](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.9.3.tar.gz)**
 - *2015.05.22*, **[v2.9.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.9.2.tar.gz)**
