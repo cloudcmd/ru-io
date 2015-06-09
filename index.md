@@ -16,7 +16,7 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 3.0.4
+Cloud Commander 3.1.0
 ===============
 ###[Главная][MainURL] [Блог][BlogURL] Демо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -262,7 +262,7 @@ npm i cloudcmd -g
 Режим одной панели
 ---------------
 Cloud Commander может работать в режиме одной панели, в том случае, если размер экрана не позволяет разместить вторую панель.
-Так может быть в случае использования мобильных устройств, планшетов или небольших размеров окон браузера.
+Такое может случится,когда Вы используете мобильный, планшет или маленькое окно браузера для взаимодействия с файловым менеджером.
 
 ![Режим одной панели](http://cloudcmd.io/img/screen/one-panel-mode.png "Режим одной панели")
 
@@ -356,6 +356,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 История версий
 ---------------
+- *2015.06.09*, **[v3.1.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v3.1.0.tar.gz)**
 - *2015.06.04*, **[v3.0.4](//github.com/cloudcmd/archive/raw/master/cloudcmd-v3.0.4.tar.gz)**
 - *2015.06.02*, **[v3.0.3](//github.com/cloudcmd/archive/raw/master/cloudcmd-v3.0.3.tar.gz)**
 - *2015.05.31*, **[v3.0.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v3.0.2.tar.gz)**
