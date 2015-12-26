@@ -16,7 +16,7 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 5.0.3
+Cloud Commander 5.0.4
 ===============
 ###[Главная][MainURL] [Блог][BlogURL] Демо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -30,6 +30,8 @@ Cloud Commander 5.0.3
 [DWORD]:                    https://github.com/cloudcmd/dword "Редактор основанный на CodeMirror"
 [EDWARD]:                   https://github.com/cloudcmd/edward "Редактор основанный на Ace"
 [EDWARD_KEYS]:              https://github.com/cloudcmd/edward/#hot-keys "Горячие клавиши Edward"
+
+[Docker_URL]:                https://docker.io "Docker"
 
 **Cloud Commander** - двухпанельный веб файл менеджер с консолью и редактором. Поможет вам управлять сервером и работать с файлами, каталогами и программами в браузере на любом компьютере, смартфоне или планшете.
 
@@ -395,8 +397,21 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 /etc/init.d/nginx restart
 ```
 
+Docker
+---------------
+`Cloud Commander` можно использовать как [docker][DOCKER_URL] контейнер:
+
+```sh
+docker run -v ~:/root -v /:/mnt/fs -it -p 8000:8000 coderaiser/cloudcmd
+```
+
+Настройки будут читаться из домашнего каталога, корень файловой системы монтирован к `/mnt/fs`,
+`8000` порт контейнера будет доступен через порт главной системы.
+
+
 История версий
 ---------------
+- *2015.12.26*, **[v5.0.4](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.0.4.tar.gz)**
 - *2015.12.08*, **[v5.0.3](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.0.3.tar.gz)**
 - *2015.12.01*, **[v5.0.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.0.2.tar.gz)**
 - *2015.11.15*, **[v5.0.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.0.1.tar.gz)**
