@@ -16,7 +16,7 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 5.1.3
+Cloud Commander 5.1.4
 ===============
 ###[Главная][MainURL] [Блог][BlogURL] Демо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273
@@ -174,6 +174,7 @@ npm update cloudcmd -g
 - Проигрывать видео.
 
 ###Горячие клавиши
+
 |Клавиша                |Действие
 |:----------------------|:--------------------------------------------
 | `F3`                  | открыть
@@ -184,6 +185,7 @@ npm update cloudcmd -g
 ![Edit](http://cloudcmd.io/img/screen/edit.png "Edit")
 
 ###Горячие клавиши
+
 |Клавиша                |Действие
 |:----------------------|:--------------------------------------------
 | `F4`                  | открыть
@@ -196,6 +198,7 @@ npm update cloudcmd -g
 ![Консоль](http://cloudcmd.io/img/screen/console.png "Консоль")
 
 ###Горячие клавиши
+
 |Клавиша                |Действие
 |:----------------------|:--------------------------------------------
 | `~`                   | открыть
@@ -209,6 +212,7 @@ npm update cloudcmd -g
 ![Настройки](http://cloudcmd.io/img/screen/config.png "Настройки")
 
 ###Горячие клавиши
+
 |Клавиша                |Действие
 |:----------------------|:--------------------------------------------
 | `F10`                 | открыть
@@ -266,6 +270,7 @@ npm update cloudcmd -g
 - Выйти (доступно в случае включенной `авторизации`)
  
 ###Горячие клавиши
+
 |Клавиша                |Действие
 |:----------------------|:--------------------------------------------
 | `F9`                  | открыть
@@ -411,6 +416,7 @@ docker run -v ~:/root -v /:/mnt/fs -it -p 8000:8000 coderaiser/cloudcmd
 
 История версий
 ---------------
+- *2016.02.25*, **[v5.1.4](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.1.4.tar.gz)**
 - *2016.02.24*, **[v5.1.3](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.1.3.tar.gz)**
 - *2016.02.21*, **[v5.1.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.1.2.tar.gz)**
 - *2016.02.21*, **[v5.1.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.1.1.tar.gz)**
