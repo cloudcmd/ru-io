@@ -16,7 +16,7 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 5.1.5
+Cloud Commander 5.2.0
 ===============
 ###[Главная][MainURL] [Блог][BlogURL] Демо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273
@@ -47,7 +47,7 @@ Cloud Commander 5.1.5
 - Может использоваться локально или удаленно.
 - Адаптируется под размер экрана.
 - **2 встроенных редактора** с поддержкой **подсветки синтаксиса**: [Dword][DWORD] и [Edward][EDWARD].
-- **Консоль** с поддержкой стандартной командной строки ОС.
+- [Консоль](https://github.com/cloudcmd/console "Консоль") с поддержкой стандартной командной строки ОС.
 - Написан на **JavaScript/Node.js**.
 
 Установка
@@ -416,6 +416,7 @@ docker run -v ~:/root -v /:/mnt/fs -it -p 8000:8000 coderaiser/cloudcmd
 
 История версий
 ---------------
+- *2016.03.05*, **[v5.2.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.2.0.tar.gz)**
 - *2016.02.26*, **[v5.1.5](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.1.5.tar.gz)**
 - *2016.02.25*, **[v5.1.4](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.1.4.tar.gz)**
 - *2016.02.24*, **[v5.1.3](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.1.3.tar.gz)**
