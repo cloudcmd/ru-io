@@ -16,7 +16,7 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 5.2.0
+Cloud Commander 5.2.1
 ===============
 ###[Главная][MainURL] [Блог][BlogURL] Демо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273
@@ -30,8 +30,6 @@ Cloud Commander 5.2.0
 [DWORD]:                    https://github.com/cloudcmd/dword
 [EDWARD]:                   https://github.com/cloudcmd/edward
 [EDWARD_KEYS]:              https://github.com/cloudcmd/edward/#hot-keys
-
-[Docker_URL]:                https://docker.io
 
 **Cloud Commander** - двухпанельный веб файл менеджер с консолью и редактором. Поможет вам управлять сервером и работать с файлами, каталогами и программами в браузере на любом компьютере, смартфоне или планшете.
 
@@ -55,7 +53,7 @@ Cloud Commander 5.2.0
 
 Установить **Cloud Commander** проще простого.
 
-- установить [node.js](//nodejs.org/ "node.js") или [io.js](https://iojs.org/ "io.js") если вы этого еще не сделали.
+- установить последнюю версию [node.js](//nodejs.org/ "node.js"), если вы этого еще не сделали.
 - установить ```cloudcmd``` через npm:
  
 ```sh
@@ -402,9 +400,15 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 /etc/init.d/nginx restart
 ```
 
+Разворачивание
+---------------
+`Cloud Commander` можна легко развернуть на [Heroku](https://heroku.com/deploy?template=https://github.com/coderaiser/cloudcmd "Развернуть на Heroku").
+
+[![Развернуть](https://www.herokucdn.com/deploy/button.png "Развернуть на Heroku")]( https://heroku.com/deploy?template=https://github.com/coderaiser/cloudcmd)
+
 Docker
 ---------------
-`Cloud Commander` можно использовать как [docker][DOCKER_URL] контейнер:
+`Cloud Commander` можно использовать как [docker контейнер](https://hub.docker.com/r/coderaiser/cloudcmd/ "Docker контейнер"):
 
 ```sh
 docker run -v ~:/root -v /:/mnt/fs -it -p 8000:8000 coderaiser/cloudcmd
@@ -416,6 +420,7 @@ docker run -v ~:/root -v /:/mnt/fs -it -p 8000:8000 coderaiser/cloudcmd
 
 История версий
 ---------------
+- *2016.03.07*, **[v5.2.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.2.1.tar.gz)**
 - *2016.03.05*, **[v5.2.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.2.0.tar.gz)**
 - *2016.02.26*, **[v5.1.5](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.1.5.tar.gz)**
 - *2016.02.25*, **[v5.1.4](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.1.4.tar.gz)**
