@@ -2,23 +2,24 @@
 layout: default
 lang:
  - name: English
-   link: http://cloudcmd.io
+   link: //cloudcmd.io
    translation: на Английском
  
  - name: Ukrainian
-   link: http://ua.cloudcmd.io
+   link: //ua.cloudcmd.io
    translation: на Украинском
  
  - name: Russian
-   link: http://ru.cloudcmd.io
+   link: //ru.cloudcmd.io
    translation: на Русском
 
 hideDownloadButtons: true
 ---
 
-Cloud Commander 5.4.0
+Cloud Commander 5.4.1
 ===============
-###[Главная][MainURL] [Блог][BlogURL] Демо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
+
+### [Главная][MainURL] [Блог][BlogURL] Демо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273
 [MainURL]:                  http://cloudcmd.io
 [BlogURL]:                  http://blog.cloudcmd.io
@@ -445,6 +446,7 @@ docker-compose up
 
 История версий
 ---------------
+- *2016.05.25*, **[v5.4.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.4.1.tar.gz)**
 - *2016.05.15*, **[v5.4.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.4.0.tar.gz)**
 - *2016.05.11*, **[v5.3.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.3.2.tar.gz)**
 - *2016.03.28*, **[v5.3.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.3.1.tar.gz)**
