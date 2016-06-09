@@ -16,16 +16,14 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 5.4.1
-===============
+# Cloud Commander 5.4.2
 
-### [Главная][MainURL] [Блог][BlogURL] Демо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
+### [Главная][MainURL] [Блог][BlogURL] Демо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
+
+[MainURL]:                  http://cloudcmd.io "Главная"
+[BlogURL]:                  http://blog.cloudcmd.io "Блог"
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273
-[MainURL]:                  http://cloudcmd.io
-[BlogURL]:                  http://blog.cloudcmd.io
-[JitSuURL]:                 http://cloudcmd.jit.su
 [HerokuURL]:                http://cloudcmd.herokuapp.com/
-[JitSu_LIVE_IMG]:           https://status-io.cloudcmd.io/host/cloudcmd.jit.su/img/txt.png
 [HEROKU_LIVE_IMG]:          https://status-io.cloudcmd.io/host/cloudcmd.herokuapp.com/img/txt.png
 
 [DWORD]:                    https://github.com/cloudcmd/dword
@@ -255,6 +253,7 @@ npm update cloudcmd -g
 Меню
 ---------------
 ![Menu](http://cloudcmd.io/img/screen/menu.png "Меню")
+
 Щелчок правой кнопкой мыши вызывает контекстное меню с такими пунктами:
 
 - Просмотр
@@ -446,6 +445,7 @@ docker-compose up
 
 История версий
 ---------------
+- *2016.06.09*, **[v5.4.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.4.2.tar.gz)**
 - *2016.05.25*, **[v5.4.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.4.1.tar.gz)**
 - *2016.05.15*, **[v5.4.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.4.0.tar.gz)**
 - *2016.05.11*, **[v5.3.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.3.2.tar.gz)**
@@ -583,4 +583,4 @@ docker-compose up
 Особая благодарность:
 ---------------
 - [Polietilena](http://polietilena.github.io/ "Polietilena") за **logo** и **favicon**.
-- [TarZak](https://github.com/tarzak) за русский и украинский переводы.
+- [TarZak](https://github.com/tarzak "TarZak") за русский и украинский переводы.
