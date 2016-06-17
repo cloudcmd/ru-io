@@ -13,14 +13,6 @@ lang:
    link: //ru.cloudcmd.io
    translation: на Русском
 
-scripts:
- - https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js
- - https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js
- - https://files.cloudcmd.io/js/view.js
-
-styles:
- - https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css
-
 hideDownloadButtons: true
 ---
 
@@ -40,7 +32,7 @@ hideDownloadButtons: true
 
 **Cloud Commander** - двухпанельный веб файл менеджер с консолью и редактором. Поможет вам управлять сервером и работать с файлами, каталогами и программами в браузере на любом компьютере, смартфоне или планшете.
 
-![Cloud Commander](http://cloudcmd.io/img/logo/cloudcmd.png "Cloud Commander")
+![Cloud Commander](//cloudcmd.io/img/logo/cloudcmd.png "Cloud Commander")
 
 Преимущества
 ---------------
@@ -174,7 +166,7 @@ npm update cloudcmd -g
 
  Просмотр
 ---------------
-![View](http://cloudcmd.io/img/screen/view.png "View")
+![View](//cloudcmd.io/img/screen/view.png "View")
 
 ### Возможности
 - Просматривать изображения.
@@ -191,7 +183,7 @@ npm update cloudcmd -g
 
 Редактор
 ---------------
-![Edit](http://cloudcmd.io/img/screen/edit.png "Edit")
+![Edit](//cloudcmd.io/img/screen/edit.png "Edit")
 
 ###Горячие клавиши
 
@@ -204,7 +196,7 @@ npm update cloudcmd -g
 
 Консоль
 ---------------
-![Консоль](http://cloudcmd.io/img/screen/console.png "Консоль")
+![Консоль](//cloudcmd.io/img/screen/console.png "Консоль")
 
 ###Горячие клавиши
 
@@ -218,7 +210,7 @@ npm update cloudcmd -g
 
 Настройки
 ---------------
-![Настройки](http://cloudcmd.io/img/screen/config.png "Настройки")
+![Настройки](//cloudcmd.io/img/screen/config.png "Настройки")
 
 ###Горячие клавиши
 
@@ -260,7 +252,7 @@ npm update cloudcmd -g
 
 Меню
 ---------------
-![Menu](http://cloudcmd.io/img/screen/menu.png "Меню")
+![Menu](//cloudcmd.io/img/screen/menu.png "Меню")
 
 Щелчок правой кнопкой мыши вызывает контекстное меню с такими пунктами:
 
@@ -293,7 +285,7 @@ npm update cloudcmd -g
 Cloud Commander может работать в режиме одной панели, в том случае, если размер экрана не позволяет разместить вторую панель.
 Такое может случится,когда Вы используете мобильный, планшет или маленькое окно браузера для взаимодействия с файловым менеджером.
 
-![Режим одной панели](http://cloudcmd.io/img/screen/one-panel-mode.png "Режим одной панели")
+![Режим одной панели](//cloudcmd.io/img/screen/one-panel-mode.png "Режим одной панели")
 
 Использование в качестве Middleware
 ---------------
