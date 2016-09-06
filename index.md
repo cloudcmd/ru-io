@@ -24,7 +24,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 5.6.0
+# Cloud Commander 5.6.1
 
 ### [Главная][MainURL] [Блог][BlogURL] Демо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 
@@ -83,7 +83,7 @@ npm i cloudcmd -g --force
 cloudcmd
 ```
 
-**Cloud Commander** поддерживает параметры в командной строке:
+**Cloud Commander** поддерживает параметры командной строки:
 
 |Параметр                   |Действие
 |:--------------------------|:--------------------------------------------
@@ -453,6 +453,7 @@ docker-compose up
 
 История версий
 ---------------
+- *2016.09.06*, **[v5.6.1](//github.com/coderaiser/cloudcmd/releases/tag/v5.6.1)**
 - *2016.07.19*, **[v5.6.0](//github.com/coderaiser/cloudcmd/releases/tag/v5.6.0)**
 - *2016.06.29*, **[v5.5.1](//github.com/coderaiser/cloudcmd/releases/tag/v5.5.1)**
 - *2016.06.29*, **[v5.5.2](//github.com/coderaiser/cloudcmd/releases/tag/v5.5.2)**
