@@ -24,7 +24,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 5.10.0
+# Cloud Commander 5.10.1
 
 ### [Главная][MainURL] [Блог][BlogURL] Демо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 
@@ -224,9 +224,7 @@ npm update cloudcmd -g
 | `F10`                 | открыть
 | `Esc`                 | закрыть
 
-Когда Вы меняете одну из опций, файл `~/.cloudcmd.json` может быть сохранен.
-Их можно поменять собственноручно в любом текстовом редакторе.
-Вот описание опций:
+Результат настройки файлового менеджера записывается в текстовый файл доступный для чтения и редактирования. Он называется `~/.cloudcmd.json` и содержит следующие поля:
 
 ```js
 {
@@ -450,6 +448,7 @@ docker-compose up
 
 История версий
 ---------------
+- *2016.11.22*, **[v5.10.1](//github.com/coderaiser/cloudcmd/releases/tag/v5.10.1)**
 - *2016.11.18*, **[v5.10.0](//github.com/coderaiser/cloudcmd/releases/tag/v5.10.0)**
 - *2016.11.10*, **[v5.9.1](//github.com/coderaiser/cloudcmd/releases/tag/v5.9.1)**
 - *2016.11.10*, **[v5.9.0](//github.com/coderaiser/cloudcmd/releases/tag/v5.9.0)**
@@ -606,5 +605,5 @@ docker-compose up
 
 Особая благодарность:
 ---------------
-- [Polietilena](http://polietilena.github.io/ "Polietilena") за **logo** и **favicon**.
+- [Елена Залиток](https://zalitok.github.io/ "Елена Залиток") за **logo** и **favicon**.
 - [TarZak](https://github.com/tarzak "TarZak") за русский и украинский переводы.
