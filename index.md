@@ -24,7 +24,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 5.12.0
+# Cloud Commander 5.12.1
 
 ### [Главная][MainURL] [Блог][BlogURL] Демо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 
@@ -485,6 +485,7 @@ docker-compose up
  
 История версий
 ---------------
+- *2016.12.19*, **[v5.12.1](//github.com/coderaiser/cloudcmd/releases/tag/v5.12.1)**
 - *2016.12.16*, **[v5.12.0](//github.com/coderaiser/cloudcmd/releases/tag/v5.12.0)**
 - *2016.12.05*, **[v5.11.1](//github.com/coderaiser/cloudcmd/releases/tag/v5.11.1)**
 - *2016.12.01*, **[v5.11.0](//github.com/coderaiser/cloudcmd/releases/tag/v5.11.0)**
