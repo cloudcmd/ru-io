@@ -24,7 +24,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 6.6.0
+# Cloud Commander 6.6.1
 
 ### [Главная][MainURL] [Блог][BlogURL] Демо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 
@@ -379,7 +379,7 @@ iptables -t nat -D PREROUTING 1
 iptables -t nat -D PREROUTING 2
 ```
 
-###nginx
+### nginx
 Возьмите [nginx](http://nginx.org/ "nginx"). В Linux это можно сделать так:
 
 ```sh
@@ -484,6 +484,7 @@ docker-compose up
  
 История версий
 ---------------
+- *2017.02.24*, **[v6.6.1](//github.com/coderaiser/cloudcmd/releases/tag/v6.6.1)**
 - *2017.02.22*, **[v6.6.0](//github.com/coderaiser/cloudcmd/releases/tag/v6.6.0)**
 - *2017.02.21*, **[v6.5.6](//github.com/coderaiser/cloudcmd/releases/tag/v6.5.6)**
 - *2017.02.21*, **[v6.5.5](//github.com/coderaiser/cloudcmd/releases/tag/v6.5.5)**
