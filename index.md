@@ -24,7 +24,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 7.3.1
+# Cloud Commander 7.3.2
 
 ### [Главная][MainURL] [Блог][BlogURL] Демо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 
@@ -61,7 +61,7 @@ hideDownloadButtons: true
 
 Установить **Cloud Commander** проще простого.
 
-- установить последнюю версию [node.js](//nodejs.org/ "node.js"), если вы этого еще не сделали.
+- установить последнюю версию [node.js](//nodejs.org/ "node.js"), если Вы этого еще не сделали.
 - установить `cloudcmd` через `npm`:
  
 ```sh
@@ -401,7 +401,7 @@ server {
 }
 ```
 
-Если вы хотите включить **SSL**, добавьте несколько строчек в раздел сервера:
+Если Вы хотите включить **SSL**, добавьте несколько строчек в раздел сервера:
 
 ```sh
 server {
@@ -478,12 +478,13 @@ docker-compose up
  
 Существует масса способов поучаствовать в разработке `Cloud Commander`:
  
- - если вы нашли баг или у вас есть идея для воплощения [создайте issue](https://github.com/coderaiser/cloudcmd/issues/new "Создать issue");
- - если вы исправили баг, опечатку или реализовали новый функционал [создайте pull request](https://github.com/coderaiser/cloudcmd/compare "Создать pull request");
- - если вы владеете другими языками, можете помочь с переводом [переводы сайта](https://github.com/coderaiser/cloudcmd/wiki "Вики Cloud Commander сообщества");
+ - если Вы нашли баг или у вас есть идея для воплощения [создайте issue](https://github.com/coderaiser/cloudcmd/issues/new "Создать issue");
+ - если Вы исправили баг, опечатку или реализовали новый функционал [создайте pull request](https://github.com/coderaiser/cloudcmd/compare "Создать pull request");
+ - если Вы владеете другими языками, можете [помочь с переводом](https://github.com/coderaiser/cloudcmd/wiki "Вики Cloud Commander сообщества");
  
 История версий
 ---------------
+- *2017.08.29*, **[v7.3.2](//github.com/coderaiser/cloudcmd/releases/tag/v7.3.2)**
 - *2017.08.14*, **[v7.3.1](//github.com/coderaiser/cloudcmd/releases/tag/v7.3.1)**
 - *2017.08.14*, **[v7.3.0](//github.com/coderaiser/cloudcmd/releases/tag/v7.3.0)**
 - *2017.08.11*, **[v7.2.2](//github.com/coderaiser/cloudcmd/releases/tag/v7.2.2)**
