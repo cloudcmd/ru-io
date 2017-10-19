@@ -24,7 +24,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 8.0.5
+# Cloud Commander 8.1.0
 
 ### [Главная][MainURL] [Блог][BlogURL] Демо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 
@@ -478,12 +478,13 @@ docker-compose up
  
 Существует масса способов поучаствовать в разработке `Cloud Commander`:
  
- - если Вы нашли баг или у вас есть идея для воплощения [создайте issue](https://github.com/coderaiser/cloudcmd/issues/new "Создать issue");
+ - если Вы нашли баг или у Вас есть идея для воплощения [создайте issue](https://github.com/coderaiser/cloudcmd/issues/new "Создать issue");
  - если Вы исправили баг, опечатку или реализовали новый функционал [создайте pull request](https://github.com/coderaiser/cloudcmd/compare "Создать pull request");
  - если Вы владеете другими языками, можете [помочь с переводом](https://github.com/coderaiser/cloudcmd/wiki "Вики Cloud Commander сообщества");
  
 История версий
 ---------------
+- *2017.10.19*, **[v8.1.0](//github.com/coderaiser/cloudcmd/releases/tag/v8.1.0)**
 - *2017.10.13*, **[v8.0.5](//github.com/coderaiser/cloudcmd/releases/tag/v8.0.5)**
 - *2017.10.10*, **[v8.0.4](//github.com/coderaiser/cloudcmd/releases/tag/v8.0.4)**
 - *2017.10.06*, **[v8.0.3](//github.com/coderaiser/cloudcmd/releases/tag/v8.0.3)**
