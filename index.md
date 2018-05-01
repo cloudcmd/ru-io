@@ -1,15 +1,18 @@
 ---
 layout: default
 lang:
- - name: English
-   link: //cloudcmd.io
-   translation: на Английском
+ -
+    name: English
+    link: //cloudcmd.io
+    translation: на Английском
  
- - name: Ukrainian
+ -
+   name: Ukrainian
    link: //ua.cloudcmd.io
    translation: на Украинском
- 
- - name: Russian
+
+ -
+   name: Russian
    link: //ru.cloudcmd.io
    translation: на Русском
 
@@ -24,7 +27,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 9.3.1
+# Cloud Commander 9.3.3
 
 ### [Главная][MainURL] [Блог][BlogURL] Демо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 
@@ -351,7 +354,7 @@ server.listen(port);
 Сервер
 ---------------
 Обычно процессы, запущенные с правами отличными от root, не могут слушать порты с номером меньше, чем 1024.
-В любом случае, я советую Вам запускать Cloud Commander не под root. Как это сделать?
+В любом случае, я советую запускать Cloud Commander не под root. Как это сделать?
 Существует несколько простых и быстрых вариантов. Один из них - перенаправление портов.
 
 ### Iptables
@@ -484,6 +487,8 @@ docker-compose up
  
 История версий
 ---------------
+- *2018.05.01*, **[v9.3.3](//github.com/coderaiser/cloudcmd/releases/tag/v9.3.3)**
+- *2018.05.01*, **[v9.3.2](//github.com/coderaiser/cloudcmd/releases/tag/v9.3.2)**
 - *2018.04.30*, **[v9.3.1](//github.com/coderaiser/cloudcmd/releases/tag/v9.3.1)**
 - *2018.04.27*, **[v9.3.0](//github.com/coderaiser/cloudcmd/releases/tag/v9.3.0)**
 - *2018.04.25*, **[v9.2.0](//github.com/coderaiser/cloudcmd/releases/tag/v9.2.0)**
