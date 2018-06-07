@@ -27,7 +27,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 10.0.3
+# Cloud Commander 10.1.0
 
 ### [Главная][MainURL] [Блог][BlogURL] Демо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 
@@ -487,6 +487,7 @@ docker-compose up
  
 История версий
 ---------------
+- *2018.06.07*, **[v10.1.0](//github.com/coderaiser/cloudcmd/releases/tag/v10.1.0)**
 - *2018.06.04*, **[v10.0.3](//github.com/coderaiser/cloudcmd/releases/tag/v10.0.3)**
 - *2018.05.29*, **[v10.0.2](//github.com/coderaiser/cloudcmd/releases/tag/v10.0.2)**
 - *2018.05.29*, **[v10.0.1](//github.com/coderaiser/cloudcmd/releases/tag/v10.0.1)**
