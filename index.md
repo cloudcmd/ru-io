@@ -27,7 +27,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 15.0.4
+# Cloud Commander 15.1.0
 
 ### [Главная][MainURL] [Блог][BlogURL] Демо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 
@@ -771,5 +771,5 @@ docker-compose up
 
 Особая благодарность:
 ---------------
-- [Елена Залиток](https://zalitok.github.io/ "Елена Залиток") за **logo** и **favicon**.
+- [Елена Залиток](https://www.linkedin.com/in/olena-zalitok-ux-designer "Елена Залиток") за **logo** и **favicon**.
 - [TarZak](https://github.com/tarzak "TarZak") за русский и украинский переводы.
