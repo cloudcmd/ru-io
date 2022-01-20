@@ -27,7 +27,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 15.9.14
+# Cloud Commander 15.9.15
 
 ### [Главная][MainURL] [Блог][BlogURL]
 
