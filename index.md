@@ -27,7 +27,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 17.1.2
+# Cloud Commander 17.1.3
 
 ### [Главная][MainURL] [Блог][BlogURL] [Поддержать][SupportURL]
 
